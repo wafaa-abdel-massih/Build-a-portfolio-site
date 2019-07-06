@@ -5,18 +5,16 @@
     width: 100%;
     height: auto;
 }
-@media screen and (max-width: 600px) {
-  .related-work {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
 .heading {
   width: 100%;
   text-align: right;
   border-bottom: 4px solid #7d97ad;
   margin-bottom: 2.7vw ;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.detials{
+  padding: 1%;
 }
 .name{
   width:100%;
@@ -30,8 +28,7 @@
   color: #2d3c49;
 }
 #udacity-img{
-  float: left;
-  width: 12%;
+  width: 14%;
 }
 .center{
   width: 100%;
@@ -47,9 +44,9 @@
   margin: 4.5vw 0 1.0vw 1.1vw;
 }
 .bottom{
-  width: 100%;
+  display: flex;
+  flex-wrap: row wrap;
 }
-
 .work-title {
   width: 100%;
   margin: 1% 0 2% 0;
@@ -58,23 +55,31 @@
   text-align: center;
 }
 .related-work{
-    float: left;
-    align-content: center;
-    width: 30.53%;
-    margin: 0 2.6vw 0 0;
-    text-align: center;
+  flex-basis:31%;
+  max-width: 31%;
+  margin: 0 2.6vw 0 0;
+}
+#bokeh{
+  margin: 0;
 }
 .related-work a{
 	text-decoration:none;
 	font-size: 1.5vw;
 	color:#2d3c49;
+  text-align: center;
 }
 .related-work img {
     width: 100%;
-    margin: 0 2.6vw 0 0;
 }
 .related-work h4.title{
   font-size: 4.0vw;
   color: #2d3c49;
   text-align: center;
+}
+
+@media(max-width: 555px) {
+  .related-work {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
 }
